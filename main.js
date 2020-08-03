@@ -14,9 +14,15 @@ window.onload = function() {
     function post(v, t) {
         if (t == 0) {
             var n = parseInt(v, 10).toString(2);
+            if (n == "NaN") {
+                var n = "無効な数値です"
+            }
             document.getElementById("result").innerHTML = n;
         } else if (t == 1) {
             var n = parseInt(v, 2);
+            if (n == "NaN") {
+                var n = "無効な数値です"
+            }
             document.getElementById("result").innerHTML = n;
         }
     }
