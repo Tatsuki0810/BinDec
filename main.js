@@ -12,14 +12,10 @@ window.onload = function() {
     };
 
     function post(v, t) {
-        console.log(v);
-        console.log(t);
         if (t == 0) {
-            console.log("Type1");
             var n = parseInt(v, 10).toString(2);
             document.getElementById("result").innerHTML = n;
         } else if (t == 1) {
-            console.log("Type2");
             var n = parseInt(v, 2);
             document.getElementById("result").innerHTML = n;
         }
