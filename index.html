@@ -4,9 +4,9 @@
         <title>BinDec -10進数と2進数の相互変換-</title>
         <meta charset="UTF-8">
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
-        <script src="main.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <script src="main.js"></script>
 
         <style>
             body {
@@ -16,8 +16,9 @@
     </head>
 
     <body>
+        <br>
         <header>
-            <a href="#"></a><h1>BinDec</h1></a>
+            <a href="#"><h1>BinDec</h1></a>
             <br><h2>- 10進数と2進数の相互変換 -</h2>
         </header>
         <br>
@@ -25,21 +26,29 @@
         <br>
         <div id="main">
             <form id="mainform" method="POST">
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" id="type1" checked>
+                <!-- <div class="form-check">
+                    <input class="form-check-input" name="rd" id="type1" onchange="radio();" checked>
                     <label class="form-check-label" for="radio1a">10進数から2進数へ(ToBin)</label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" id="type2">
+                    <input class="form-check-input" name="rd" id="type2" onchange="radio();">
                     <label class="form-check-label" for="radio1b">2進数から10進数へ(ToDec)</label>
+                  </div> -->
+                  <div class="form-group">
+                    <label for="select1a">Select:</label>
+                    <select id="slc" class="form-control">
+                      <option value="type1">10進数から2進数へ(ToBin)</option>
+                      <option value="type2">2進数から10進数へ(ToDec)</option>
+                    </select>
                   </div>
-                  <input type="number" id="num">
+                  <input type="number" name="numnum" id="num">
                   <input type="button" value="送信" href="javascript:void(0)" id="send">
             </form>
-
-            <div id="res">
+            <br><br><br>
+            <div class="border border-dark" style="padding:10px; margin: 0 100px;">
+                <br>
                 <h4>結果</h4>
-                <p id="result"></p>
+                <p id="result">ここに表示されます</p>
             </div>
         </div>
     </body>
