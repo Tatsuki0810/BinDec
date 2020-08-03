@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <title>BinDec -10進数と2進数の相互変換-</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script src="main.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <header>
+            <a href="#"></a><h1>BinDec</h1></a>
+            <br><h2>- 10進数と2進数の相互変換 -</h2>
+        </header>
+        <br>
+        <hr>
+        <br>
+        <div id="main">
+            <form id="mainform" method="POST">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="type1" checked>
+                    <label class="form-check-label" for="radio1a">10進数から2進数へ(ToBin)</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" id="type2">
+                    <label class="form-check-label" for="radio1b">2進数から10進数へ(ToDec)</label>
+                  </div>
+                  <input type="number" id="num">
+                  <input type="button" value="送信" href="javascript:void(0)" id="send">
+            </form>
+
+            <div id="result"></div>
+        </div>
+    </body>
+</html>
